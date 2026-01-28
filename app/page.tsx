@@ -2,7 +2,7 @@ import { TextShimmer } from '@/components/ui/text-shimmer';
 
 function TextShimmerBasic() {
   return (
-    <TextShimmer className="font-mono text-lg sm:text-xl" duration={1}>
+    <TextShimmer className="font-mono text-[70px] leading-[1.1]" duration={1}>
       Generating code...
     </TextShimmer>
   );
@@ -12,7 +12,7 @@ function TextShimmerColor() {
   return (
     <TextShimmer
       duration={1.2}
-      className="text-2xl sm:text-3xl font-medium 
+      className="text-[70px] leading-[1.1] font-medium 
         [--base-color:theme(colors.red.600)] 
         [--base-gradient-color:theme(colors.blue.200)] 
         dark:[--base-color:theme(colors.blue.700)] 
@@ -27,13 +27,13 @@ function TextShimmerColor() {
 export default function Page() {
   return (
     <div className="space-y-10">
-      <h1 className="text-4xl sm:text-5xl font-bold">Text Shimmer Examples</h1>
+      <h1 className="text-[70px] leading-[1.1] font-bold">Text Shimmer Examples</h1>
       <div className="space-y-3">
-        <h2 className="text-2xl sm:text-3xl font-semibold">Basic</h2>
+        <h2 className="text-[70px] leading-[1.1] font-semibold">Basic</h2>
         <TextShimmerBasic />
       </div>
       <div className="space-y-3">
-        <h2 className="text-2xl sm:text-3xl font-semibold">Colored</h2>
+        <h2 className="text-[70px] leading-[1.1] font-semibold">Colored</h2>
         <TextShimmerColor />
       </div>
     </div>
